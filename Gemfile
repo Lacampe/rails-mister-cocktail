@@ -33,6 +33,12 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+# Cloudinary gem
+gem 'cloudinary', '1.1.0'
+
+# Carrierwave
+gem 'carrierwave'
+
 # Security gem
 gem 'figaro'
 

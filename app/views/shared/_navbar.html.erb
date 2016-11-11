@@ -1,8 +1,64 @@
-<div class="banner">
-  <div class="banner-content">
-    <h1>Mr Cocktail's</h1>
-    <p>God Blessed List of Tasty Cocktails</p>
-    <%= link_to 'List all Cocktails', cocktails_path, class: 'btn btn-success' %>
-    <%= link_to 'Add a Cocktail', new_cocktail_path, class: 'btn btn-danger' %>
+<div class="navbar-wagon navbar-wagon-fixed">
+
+  <!-- Logo -->
+  <%= link_to cocktails_path, {class: 'navbar-wagon-brand'} do %>
+    <%= image_tag 'cocktail.png' %>
+  <% end %>
+
+  <!-- Website's Name -->
+  <h1>Cocktail Club</h1>
+
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Search form -->
+<!--     <form action="" class="navbar-wagon-search">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+      <button type="submit" class="navbar-wagon-search-btn">
+        <i class="fa fa-search"></i>
+      </button>
+    </form> -->
+
+    <!-- Text link -->
+<!--     <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+ -->
+    <!-- Text link -->
+<!--     <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+ -->
+    <!-- Notification link-->
+<!--     <a href="" class="navbar-wagon-item navbar-wagon-link">
+      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-blue">3</div>
+      </div>
+    </a> -->
+
+    <!-- Profile picture and dropdown -->
+<!--     <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+    <!-- Button (call-to-action) -->
+    <%= link_to 'Add a Cocktail', new_cocktail_path, {class: 'navbar-wagon-item navbar-wagon-button'} %>
   </div>
+
+  <!-- Dropdown appearing on mobile only -->
+<!--   <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Some mobile link</a></li>
+        <li><a href="#">Other one</a></li>
+        <li><a href="#">Other one</a></li>
+      </ul>
+    </div>
+  </div> -->
 </div>
