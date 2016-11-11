@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |c| %>
+      <div class="col-sm-4">
+        <%= render 'card', cocktail: c %>
+      </div>
+    <% end %>
+  </div>
+</div>
